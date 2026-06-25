@@ -49,8 +49,7 @@ public class ManageCategoryPage {
 	}
 
 	public void clickChosenFile() {
-		chosenfile
-				.sendKeys("C:\\Users\\bibin\\eclipse-workspace\\7rmartsupermarket\\src\\test\\resources\\Magnolia.jpg");
+		chosenfile.sendKeys("C:\\Users\\bibin\\eclipse-workspace\\7rmartsupermarket\\src\\test\\resources\\Magnolia.jpg");
 
 	}
 

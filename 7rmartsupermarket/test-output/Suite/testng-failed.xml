@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testscript.ManageFooterTextTest">
+        <methods>
+          <include name="browserInitialization"/>
+          <include name="browserQuit"/>
+          <include name="varifyUserNameAndPassword"/>
+        </methods>
+      </class> <!-- testscript.ManageFooterTextTest -->
+      <class name="testscript.AdminUsersTest">
+        <methods>
+          <include name="varifyUserNameAndPassword"/>
+          <include name="browserInitialization"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- testscript.AdminUsersTest -->
+      <class name="testscript.ManageNewsTest">
+        <methods>
+          <include name="browserInitialization"/>
+          <include name="browserQuit"/>
+          <include name="manageNewsField"/>
+        </methods>
+      </class> <!-- testscript.ManageNewsTest -->
+      <class name="testscript.ManageCategoryTest">
+        <methods>
+          <include name="browserInitialization"/>
+          <include name="varifyUserNameAndPassword"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- testscript.ManageCategoryTest -->
+      <class name="testscript.LogoutTest">
+        <methods>
+          <include name="verifyLogout"/>
+          <include name="browserInitialization"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- testscript.LogoutTest -->
+      <class name="testscript.ManageContactTest">
+        <methods>
+          <include name="varifyUserNameAndPassword"/>
+          <include name="browserInitialization"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- testscript.ManageContactTest -->
+      <class name="testscript.LoginTest">
+        <methods>
+          <include name="verifyUserIsAbletoLogInUsingvalidUserNameAndPassword"/>
+          <include name="verifyUserIsAbletoLogInUsingInvalidUserNameAndPassword"/>
+          <include name="verifyUserIsAbletoLogInUsingvalidUserNameAndInPassword"/>
+          <include name="browserInitialization"/>
+          <include name="verifyUserIsAbletoLogInUsingInvalidUserNameAndInPassword"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- testscript.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -6,6 +6,9 @@ public class Constant {
 	
 	public static final String TESTDATAFILES= System.getProperty("user.dir")+"\\src\\test\\resources\\Magnolia.jpg";
 	
+	public static final String CONFIGFILE= System.getProperty("user.dir")+"\\src\\main\\resources\\config.properties";
+	
+	
 	
 	
 

@@ -2,22 +2,28 @@ package utilities;
 
 import java.io.File;
 import java.io.IOException;
+//import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.logging.FileHandler;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.io.FileHandler;
 
-public class ScreenShotUtilities {
+//import com.github.javafaker.File;
+
+//import com.github.javafaker.File;
+
+public class ScreenShotUtility {
+	
 	public void getScreenShot(WebDriver driver, String failedTestCase) throws IOException {
 		TakesScreenshot scrShot = (TakesScreenshot) driver; // TakesScreenshot capture the current situation of the
 															// browser
 		File screenShot = scrShot.getScreenshotAs(OutputType.FILE);// this take the screenshot
 		String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());// add date and time to
 																							// screenshot name
-		File f1 = new File(System.getProperty("user.dir") + "//OutputScreenShot"); // folder creation/output
+		File f1 = new File(System.getProperty("user.dir") + "//outputScreenShot"); // folder creation/output
 		if (!f1.exists()) {//
 			f1.mkdirs(); // creat a if it doesnot exist
 		}
@@ -26,5 +32,4 @@ public class ScreenShotUtilities {
 		File finalDestination = new File(destination);
 		FileHandler.copy(screenShot, finalDestination); // FileHandler-class to move one location to another location
 	}
-
 }

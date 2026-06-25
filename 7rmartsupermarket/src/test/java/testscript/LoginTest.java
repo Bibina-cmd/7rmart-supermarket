@@ -12,7 +12,7 @@ import pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class LoginTest extends Base{
-	@Test(description = "validating login functionality")
+	@Test(description = "validating login functionality",groups = {"regression"})
 	public void verifyUserIsAbletoLogInUsingvalidUserNameAndPassword() throws IOException {
 		//String username = "admin";
 		//String password = "admin";

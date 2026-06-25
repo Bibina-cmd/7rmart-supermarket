@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import testscript.XPath;
+
 
 public class ManageNewsPage {
 	@FindBy (xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news']")WebElement managenews;
